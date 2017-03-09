@@ -34,7 +34,13 @@
                             <li><a href="#">TEAM</a></li>
                             <li><a href="#">NEWS</a></li>
                             <li><a href="#">CONTACTS</a></li>
-                            <li><a href="#">PAGES</a></li>
+                            <li><a href="#">PAGES</a>
+                              <ul class="pages_item">
+                                <li>BLOG</li>
+                                <li>BLOG POST</li>
+                                <li>PORTFOLIO SINGLE WORK</li>
+                              </ul>
+                            </li>
                         </ul>
                     </div>
                     <div id="search" onclick="click_me()">
@@ -56,9 +62,9 @@
                     <div><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                 </div>
                 <div class="slider_button_middle">
-                    <div><img src="img/slider/slide1_bg.jpg" alt=""></div>
-                    <div><img src="img/slider/slide2_bg.jpg" alt=""></div>
-                    <div><img src="img/slider/slide3_bg.jpg" alt=""></div>
+                    <div onclick="changeCover(this)"><img src="img/slider/slide1_bg.jpg" alt=""></div>
+                    <div onclick="changeCover(this)"><img src="img/slider/slide2_bg.jpg" alt=""></div>
+                    <div onclick="changeCover(this)"><img src="img/slider/slide3_bg.jpg" alt=""></div>
                 </div>
                 <div class="slider_button_right">
                     <div><span>Read more <i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
@@ -321,6 +327,17 @@
             murad=true;
           }
       }
+
+    function changeCover(a){
+    var imgSrc =  a.getElementsByTagName("img")[0].src;
+    console.log(imgSrc);
+    document.getElementById("slider").style.background = "url("+imgSrc+")"
+    }
+    var kamran = document.getElementsByClassName("slider_button_middle");
+    for (var i = 0; i < kamran.length; i++) {
+    console.log(kamran[i].getElementsByTagName("img")[0]);
+    }
+  // console.log(document.getElementsByClassName("slider_button_middle"));
     </script>
 </body>
 
