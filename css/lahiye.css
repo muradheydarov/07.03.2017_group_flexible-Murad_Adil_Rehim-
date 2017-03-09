@@ -10,7 +10,7 @@
 	width: 100%;
 	height: 659px;
 	background:url(../image/team/team_bg.jpg);
-
+	
 }
 #team .top{
 	width: 100%;
@@ -35,11 +35,15 @@
 	outline: none;
 }
 #team .top button:hover{
-	color: black;
+	border:2px solid #333;
+	color:#333;
 }
 #team .top button i{
 	font-size: 30px;
 	color:#ccc;
+}
+#team .top button i:hover{
+	color:#333;
 }
 #team .galery{
 	width: 100%;
@@ -83,7 +87,13 @@
 	background: white;
 	margin-top: 10px;
 	margin-right: 0;
-	margin-left: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+#client .about i:focus{
+	background: black;
+	padding: 5px;
 }
 #client .text{
 	width: 100%;
@@ -92,7 +102,7 @@
 }
 #client .text .content{
 	width: 100%;
-	height: 114px;
+	height: 114px; 
 }
 #client .text .content p{
 	font-size: 26px;
@@ -141,6 +151,9 @@
 	margin-right: 15px;
 	color: #ccc;
 }
+#client .gallery div a:hover{
+	color:#333;
+}
 
 
 /*SECTION CLIENT BITDI*/
@@ -154,7 +167,7 @@
 	z-index: 1;
 	position: absolute;*/
 	background-color:#1c1c1c;
-
+	
 }
 #footer .wrapper{
 	display: flex;
@@ -176,7 +189,7 @@
 #footer  .width-370{
 	width: 370px;
 	height: 322px;
-
+	
 }
 #footer .height-230{
 	width: 100%;
@@ -185,7 +198,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
+} 
 #footer   .feature .height-50{
 	width: 100%;
 	height: 50px;
@@ -213,6 +226,8 @@
 	color: white;
 	cursor: pointer;
 	font-size: 14px;
+	line-height: 17px;
+	color:#ccc;
 }
 #footer .about p{
 	line-height: 24px;
@@ -266,6 +281,9 @@
 	color:#999;
 	outline: none;
 }
+#footer .contact .inp input:first-child:focus{
+	border:1px solid  #fff;
+}
 #footer .contact .inp input:last-child{
 	width: 160px;
 	height: 50px;
@@ -274,6 +292,10 @@
 	color:#333;
 	outline: none;
 	cursor: pointer;
+}
+#footer .contact .inp input:last-child:hover{
+	color:#fff;
+	border:1px solid  #fff;
 }
 #footer .contact .inp input::-webkit-input-placeholder{
 	color: #333;
@@ -285,6 +307,9 @@
 	border:1px solid  #242424;
 	color:#999;
 	outline: none;
+}
+#footer .contact .inp textarea:focus{
+  border:1px solid  #fff;
 }
 #footer .contact .inp textarea::-webkit-input-placeholder{
 	color: #333;
@@ -356,14 +381,14 @@
 /*FOOTER RESPONSIVLIK BITTI*/
 
 @media (max-width: 991px) and (min-width: 768px){
-
+	
 .wrapper{
 	width:750px;
 	margin:0 auto;
 }
 #team{
 	width: 100%;
-	height: 519px;
+	height: 500px;
 }
 #team .top{
 	width: 100%;
@@ -383,7 +408,10 @@
 }
 
 /*TEAM RESPONSIVLIK BITTI*/
-
+#client {
+	width: 100%;
+	height: 650px;
+}
 #client .text .content p{
 	font-size: 17px;
 	line-height: 24px;
@@ -402,7 +430,7 @@
 }
 #client .gallery div a{
 	margin-right: 5px;
-
+	
 }
 /*CLIENT RESPONSIVLIK BITTI*/
 #footer{
@@ -424,7 +452,7 @@
 }
 #footer .height-300{
 	flex-wrap: wrap;
-	margin-top: 20px;
+	margin:20px;
 }
 }
 
@@ -433,32 +461,46 @@
 @media (max-width: 767px) and (min-width: 480px){
 .wrapper{
 	width: 95%;
+
 	margin:0 auto;
 }
 #team{
 	width: 100%;
 	height: 634px;
 }
+#team .top{
+	width: 100%;
+	height: 56px;
+}
+#team .top button{
+	width: 48px;
+	height: 48px;
+}
+#team .galery{
+	width: 100%;
+	height: 418px;
+}
 #team .galery div{
-	width: 330px;
-	height: 330px;
+	width: 350px;
+	height: 350px;
+	/*margin-right:20px;*/
 }
 #team .galery div:last-child{
 	display: none;
 }
+#team .galery div:first-child{
+	margin-left: 10px;
+	margin-right: 30px;
+}
 #team .galery img{
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 /*TEAM RESPONSIVLIK BITTI*/
 #client{
 	height: 1500px;
 }
-/*.client .about{
-	width: 55%;
-	height:20px;
-}*/
 #client .text .content p{
 	font-size: 17px;
 	line-height: 24px;
@@ -483,7 +525,7 @@
 }
 #client .gallery div a{
 	margin-right: 5px;
-
+	
 }
 
 /*CLIENT RESPONSIVLIK BITTI*/
@@ -512,7 +554,7 @@
 	margin-right: 10px;
 }
 #footer .about  p:last-child{
-	margin-top: 20px;
+	margin-top: 20px; 
 }
 #footer .contact{
 	width: 98%;
@@ -601,8 +643,14 @@
 	height: 1050px;
 }
 #footer .feature{
-	width: 370px;
+	width: 100%;
 	height: 329px;
+}
+#footer  .feature .height-50 .small-text {
+	width: 200px;
+	height: 100%;
+	float: left;
+	margin-left: 5px;
 }
 #footer .about{
 	width: 100%;
@@ -620,7 +668,7 @@
 	margin-right: 10px;
 }
 #footer .about  p:last-child{
-	margin-top: 20px;
+	margin-top: 20px; 
 }
 #footer .contact{
 	width: 100%;
@@ -636,7 +684,7 @@
 #footer .contact .inp input:first-child{
 	width: 96%;
 }
-#footer .contact .inp textarea:{
-	width: 80%;
+#footer .contact .inp textarea{
+	width: 95%;
 }
 }
