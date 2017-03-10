@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <div id="load"></div>
     <section id="fixed">
         <section id="header">
              <div id="top">
@@ -59,11 +60,11 @@
                 </div>
                 <div class="slider_button">
                     <div class="slider_button_left">
-                        <div><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-                        <div><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div onclick="prew()"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                        <div onclick="next()"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                     </div>
                     <div class="slider_button_middle">
-                        <div onclick="changeCover(this)"><img src="img/slider/slide1_bg.jpg" alt=""></div>
+                        <div class="active" onclick="changeCover(this)"><img src="img/slider/slide1_bg.jpg" alt=""></div>
                         <div onclick="changeCover(this)"><img src="img/slider/slide2_bg.jpg" alt=""></div>
                         <div onclick="changeCover(this)"><img src="img/slider/slide3_bg.jpg" alt=""></div>
                     </div>
@@ -99,11 +100,36 @@
             </div>
             <div id="clean_code">
                 <div class="clean_code_text">
-                    <h1><span>Clean</span> Code</h1>
-                    <p>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
+                  <ul>
+                    <li>
+                      <h1><span>Clean</span> Code</h1>
+                      <p>We triedgfh e very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
+                    </li>
+                    <li>
+                      <h1><span>Technical</span> Support</h1>
+                      <p>We tried to fgh igh-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
+                    </li>
+                    <li>
+                      <h1><span>Responsive</span></h1>
+                      <p>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
+                    </li>
+                    <li>
+                      <h1><span>Documentation</span></h1>
+                      <p>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
+                    </li>
+                    <li>
+                      <h1><span>Quality</span></h1>
+                      <p>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
+                    </li>
+                    <li>
+                      <h1><span>Support</span></h1>
+                      <p>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
+                    </li>
+                  </ul>
+
                 </div>
                 <div class="clean_code_tabs">
-                    <div class="clean_code_tabs_item0">
+                    <div class="clean_code_tabs_item0" onclick="baxsi(this)">
                         <div></div>
                         <p>Clean Code</p>
                     </div>
@@ -182,7 +208,7 @@
         <section id="team">
                 <div class="wrapper">
                     <div class="top">
-                        <h2><strong>Our</strong> Team</h2> 
+                        <h2><strong>Our</strong> Team</h2>
                         <button onclick="right()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
                         <button><i class="fa fa-angle-left" aria-hidden="true"></i></button>
                     </div>
@@ -317,29 +343,7 @@
                 </div>
             </div>
     </section>
-    <script type="text/javascript">
-    var murad=true;
-      function click_me() {
-          if (murad) {
-            document.getElementById("search").style.width="180px";
-            murad=false;
-          }else {
-            document.getElementById("search").style.width="86px"
-            murad=true;
-          }
-      }
-
-    function changeCover(a){
-    var imgSrc =  a.getElementsByTagName("img")[0].src;
-    console.log(imgSrc);
-    document.getElementById("slider").style.background = "url("+imgSrc+")"
-    }
-    var kamran = document.getElementsByClassName("slider_button_middle");
-    for (var i = 0; i < kamran.length; i++) {
-    console.log(kamran[i].getElementsByTagName("img")[0]);
-    }
-  // console.log(document.getElementsByClassName("slider_button_middle"));
-    </script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

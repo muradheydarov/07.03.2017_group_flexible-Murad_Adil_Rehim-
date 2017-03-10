@@ -3,6 +3,13 @@
   z-index: 2;
   margin-bottom:400px;
 }
+#load{
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index:9999;
+  background:url("http://demo.evatheme.com/html/white/image_slider/images/preloader.gif") no-repeat center center rgba(0,0,0,0);
+}
 #header{
   font-family: 'Roboto', sans-serif;
 }
@@ -84,6 +91,7 @@
   border-left: 1px solid lightgray;
   padding: 14px 0;
   transition: .5s;
+  width: 86px;
 }
 #search i:first-child{
   margin-left: 20px;
@@ -111,6 +119,9 @@
   position: relative;
   top: 88px;
   margin-bottom: 89px;
+}
+.clean_code_text li{
+  display: none;
 }
 .slider_text_one{
   width: 1170px;
@@ -216,6 +227,8 @@
 #services{
   height: 260px;
   background-color: #fff;
+  position: relative;
+  bottom: 1px;
 }
 .services_item{
   width: 1170px;
@@ -281,6 +294,7 @@
   color: white;
   font-weight: 100;
   line-height: 80px;
+  margin-bottom: 10px;
 }
 .clean_code_text span{
   font-weight: 400;
