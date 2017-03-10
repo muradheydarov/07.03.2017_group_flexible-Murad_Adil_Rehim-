@@ -3,13 +3,17 @@
 	height: 100%;
 	margin:0 auto;
 }
-#ragim{
+#main{
 	font-family: 'Roboto' , sans-serif;
+}
+#main{
+	background: #fff;
 }
 #team{
 	width: 100%;
 	height: 659px;
 	background:url(../image/team/team_bg.jpg);
+	
 }
 #team .top{
 	width: 100%;
@@ -56,8 +60,8 @@
 	height: 370px;
 }
 #team .galery img{
-	width: 370px;
-	height: 100%;
+	width: 100%;
+	height: auto;
 }
 
 
@@ -90,9 +94,11 @@
 	cursor: pointer;
 	font-weight: bold;
 }
-#client .about i:focus{
+#client .about i:active{
 	background: black;
-	padding: 5px;
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
 }
 #client .text{
 	width: 100%;
@@ -101,7 +107,7 @@
 }
 #client .text .content{
 	width: 100%;
-	height: 114px;
+	height: 114px; 
 }
 #client .text .content p{
 	font-size: 26px;
@@ -113,6 +119,9 @@
 	width: 100%;
 	height: 66px;
 	margin-top: 45px;
+}
+#client .text .author p{
+	color:#666;
 }
 #client .gallery{
 	width: 100%;
@@ -157,17 +166,18 @@
 
 /*SECTION CLIENT BITDI*/
 
-
+#footer{
+	font-family: 'Roboto' , sans-serif;
+}
 #footer{
 	width: 100%;
 	height: 400px;
-/*	overflow: hidden;
+	background-color:#1c1c1c;
+    /*overflow: hidden;*/
 	position: fixed;
 	z-index: 1;
-	position: absolute;*/
-	background-color:#1c1c1c;
-
-}
+	bottom: 0;
+ }
 #footer .wrapper{
 	display: flex;
 }
@@ -188,7 +198,7 @@
 #footer  .width-370{
 	width: 370px;
 	height: 322px;
-
+	
 }
 #footer .height-230{
 	width: 100%;
@@ -197,7 +207,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
+} 
 #footer   .feature .height-50{
 	width: 100%;
 	height: 50px;
@@ -380,7 +390,7 @@
 /*FOOTER RESPONSIVLIK BITTI*/
 
 @media (max-width: 991px) and (min-width: 768px){
-
+	
 .wrapper{
 	width:750px;
 	margin:0 auto;
@@ -409,7 +419,7 @@
 /*TEAM RESPONSIVLIK BITTI*/
 #client {
 	width: 100%;
-	height: 650px;
+	height: 300px;
 }
 #client .text .content p{
 	font-size: 17px;
@@ -429,12 +439,13 @@
 }
 #client .gallery div a{
 	margin-right: 5px;
-
+	
 }
 /*CLIENT RESPONSIVLIK BITTI*/
 #footer{
 	width: 100%;
 	height: 700px;
+	position: relative;
 }
 #footer .feature{
 	width: 370px;
@@ -498,7 +509,7 @@
 
 /*TEAM RESPONSIVLIK BITTI*/
 #client{
-	height: 1500px;
+	height: 1100px;
 }
 #client .text .content p{
 	font-size: 17px;
@@ -524,7 +535,7 @@
 }
 #client .gallery div a{
 	margin-right: 5px;
-
+	
 }
 
 /*CLIENT RESPONSIVLIK BITTI*/
@@ -532,6 +543,7 @@
 #footer{
 	width: 100%;
 	height: 1050px;
+	position: relative;
 }
 #footer .feature{
 	width: 370px;
@@ -553,7 +565,7 @@
 	margin-right: 10px;
 }
 #footer .about  p:last-child{
-	margin-top: 20px;
+	margin-top: 20px; 
 }
 #footer .contact{
 	width: 98%;
@@ -577,7 +589,7 @@
 }
 #team{
 	width: 100%;
-	height: 645px;
+	height: 600px;
 }
 #team .top{
 	width: 100%;
@@ -603,16 +615,25 @@
 }
 #team .galery img{
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 /*CLIENT RESPONSIVLIK BITTI*/
 
 #client{
-	height: 1150px;
+	height: 750px;
+}
+#client .about h2{
+	font-size: 26px;
+}
+#client .about i{
+	margin-left: 6px;
 }
 #client .text .content p{
 	font-size: 17px;
 	line-height: 24px;
+}
+#client .text .author p{
+	padding-top: 46px;
 }
 #client .gallery div{
 	width: 260px;
@@ -640,6 +661,7 @@
 #footer{
 	width: 100%;
 	height: 1050px;
+	position: relative;
 }
 #footer .feature{
 	width: 100%;
@@ -667,12 +689,12 @@
 	margin-right: 10px;
 }
 #footer .about  p:last-child{
-	margin-top: 20px;
+	margin-top: 20px; 
 }
 #footer .contact{
 	width: 100%;
 	height: 308px;
-	margin-top: 40px;
+	margin-top: 50px;
 }
 #footer .height-300{
 	display: flex;

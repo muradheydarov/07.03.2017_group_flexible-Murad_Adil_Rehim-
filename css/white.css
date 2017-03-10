@@ -1,3 +1,8 @@
+#fixed{
+  position: relative;
+  z-index: 2;
+  margin-bottom:400px;
+}
 #header{
   font-family: 'Roboto', sans-serif;
 }
@@ -210,6 +215,7 @@
 }
 #services{
   height: 260px;
+  background-color: #fff;
 }
 .services_item{
   width: 1170px;

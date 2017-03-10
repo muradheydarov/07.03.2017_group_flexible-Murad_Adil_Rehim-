@@ -15,121 +15,122 @@
 </head>
 
 <body>
-    <section id="header">
-        <div id="top">
-            <div id="nav">
-                <div id="logo">
-                    <span class="w">W</span>
-                    <span class="w">H</span>
-                    <span class="w">I</span>
-                    <span class="t">T</span>
-                    <span class="e">E</span>
-                </div>
-                <div id="nav_right">
-                    <div id="nav_item">
-                        <ul>
-                            <li><a href="#" class="first_a">HOME</a></li>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">PROJECTS</a></li>
-                            <li><a href="#">TEAM</a></li>
-                            <li><a href="#">NEWS</a></li>
-                            <li><a href="#">CONTACTS</a></li>
-                            <li><a href="#">PAGES</a>
-                              <ul class="pages_item">
-                                <li>BLOG</li>
-                                <li>BLOG POST</li>
-                                <li>PORTFOLIO SINGLE WORK</li>
-                              </ul>
-                            </li>
-                        </ul>
+    <section id="fixed">
+        <section id="header">
+             <div id="top">
+                <div id="nav">
+                    <div id="logo">
+                        <span class="w">W</span>
+                        <span class="w">H</span>
+                        <span class="w">I</span>
+                        <span class="t">T</span>
+                        <span class="e">E</span>
                     </div>
-                    <div id="search" onclick="click_me()">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                        <input type="text" name="" value="" placeholder="Search">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    <div id="nav_right">
+                        <div id="nav_item">
+                            <ul>
+                                <li><a href="#" class="first_a">HOME</a></li>
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#">PROJECTS</a></li>
+                                <li><a href="#">TEAM</a></li>
+                                <li><a href="#">NEWS</a></li>
+                                <li><a href="#">CONTACTS</a></li>
+                                <li><a href="#">PAGES</a>
+                                  <ul class="pages_item">
+                                    <li>BLOG</li>
+                                    <li>BLOG POST</li>
+                                    <li>PORTFOLIO SINGLE WORK</li>
+                                  </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="search" onclick="click_me()">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <input type="text" name="" value="" placeholder="Search">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="slider">
-            <div class="slider_text_one">
-                <h1><span>Creative</span> White Templates</h1>
-                <h2>The template is suitable for any company and the direction <br> that appreciates style, purity and quality of the web site.</h2>
+            <div id="slider">
+                <div class="slider_text_one">
+                    <h1><span>Creative</span> White Templates</h1>
+                    <h2>The template is suitable for any company and the direction <br> that appreciates style, purity and quality of the web site.</h2>
+                </div>
+                <div class="slider_button">
+                    <div class="slider_button_left">
+                        <div><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                        <div><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="slider_button_middle">
+                        <div onclick="changeCover(this)"><img src="img/slider/slide1_bg.jpg" alt=""></div>
+                        <div onclick="changeCover(this)"><img src="img/slider/slide2_bg.jpg" alt=""></div>
+                        <div onclick="changeCover(this)"><img src="img/slider/slide3_bg.jpg" alt=""></div>
+                    </div>
+                    <div class="slider_button_right">
+                        <div><span>Read more <i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                    </div>
+                </div>
             </div>
-            <div class="slider_button">
-                <div class="slider_button_left">
-                    <div><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-                    <div><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                </div>
-                <div class="slider_button_middle">
-                    <div onclick="changeCover(this)"><img src="img/slider/slide1_bg.jpg" alt=""></div>
-                    <div onclick="changeCover(this)"><img src="img/slider/slide2_bg.jpg" alt=""></div>
-                    <div onclick="changeCover(this)"><img src="img/slider/slide3_bg.jpg" alt=""></div>
-                </div>
-                <div class="slider_button_right">
-                    <div><span>Read more <i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
-                </div>
-            </div>
-        </div>
-        <div id="services">
-            <div class="services_item">
-                <div>
-                    <p><span>Easy</span> Customize</p>
-                    <p class="small_border"></p>
-                    <p>Quality and very comfortable design, does not hurt the eyes and pleasant to use.</p>
-                </div>
-                <div>
-                    <p><span>Modern</span> Design</p>
-                    <p class="small_border"></p>
-                    <p>Quality and unique design that meets all the requirements and trends of modern web design.</p>
-                </div>
+            <div id="services">
+                <div class="services_item">
+                    <div>
+                        <p><span>Easy</span> Customize</p>
+                        <p class="small_border"></p>
+                        <p>Quality and very comfortable design, does not hurt the eyes and pleasant to use.</p>
+                    </div>
+                    <div>
+                        <p><span>Modern</span> Design</p>
+                        <p class="small_border"></p>
+                        <p>Quality and unique design that meets all the requirements and trends of modern web design.</p>
+                    </div>
 
-                <div>
-                    <p><span>Responsive</span> Design</p>
-                    <p class="small_border"></p>
-                    <p>Design that will be equally beautifully displayed on all your devices, tablet, smartphone or computer.</p>
-                </div>
-                <div>
-                    <p><span>Free</span> Updates & Support</p>
-                    <p class="small_border"></p>
-                    <p>Hour and great support template. You can always ask a question and we will help you.</p>
-                </div>
-            </div>
-        </div>
-        <div id="clean_code">
-            <div class="clean_code_text">
-                <h1><span>Clean</span> Code</h1>
-                <p>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
-            </div>
-            <div class="clean_code_tabs">
-                <div class="clean_code_tabs_item0">
-                    <div></div>
-                    <p>Clean Code</p>
-                </div>
-                <div class="clean_code_tabs_item1">
-                    <div></div>
-                    <p>Support</p>
-                </div>
-                <div class="clean_code_tabs_item2">
-                    <div></div>
-                    <p>Responsive</p>
-                </div>
-                <div class="clean_code_tabs_item3">
-                    <div></div>
-                    <p>Documentation</p>
-                </div>
-                <div class="clean_code_tabs_item4">
-                    <div></div>
-                    <p>Quality</p>
-                </div>
-                <div class="clean_code_tabs_item5">
-                    <div></div>
-                    <p>Support</p>
+                    <div>
+                        <p><span>Responsive</span> Design</p>
+                        <p class="small_border"></p>
+                        <p>Design that will be equally beautifully displayed on all your devices, tablet, smartphone or computer.</p>
+                    </div>
+                    <div>
+                        <p><span>Free</span> Updates & Support</p>
+                        <p class="small_border"></p>
+                        <p>Hour and great support template. You can always ask a question and we will help you.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="body">
+            <div id="clean_code">
+                <div class="clean_code_text">
+                    <h1><span>Clean</span> Code</h1>
+                    <p>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
+                </div>
+                <div class="clean_code_tabs">
+                    <div class="clean_code_tabs_item0">
+                        <div></div>
+                        <p>Clean Code</p>
+                    </div>
+                    <div class="clean_code_tabs_item1">
+                        <div></div>
+                        <p>Support</p>
+                    </div>
+                    <div class="clean_code_tabs_item2">
+                        <div></div>
+                        <p>Responsive</p>
+                    </div>
+                    <div class="clean_code_tabs_item3">
+                        <div></div>
+                        <p>Documentation</p>
+                    </div>
+                    <div class="clean_code_tabs_item4">
+                        <div></div>
+                        <p>Quality</p>
+                    </div>
+                    <div class="clean_code_tabs_item5">
+                        <div></div>
+                        <p>Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="body">
         <div class="purpose">
             <div class="wrapper">
                 <div class="text">
@@ -176,81 +177,82 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="ragim">
+        </section>
+        <section id="main">
         <section id="team">
-            <div class="wrapper">
-                <div class="top">
-                    <h2><strong>Our</strong> Team</h2>
-                    <button><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                    <button><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <div class="wrapper">
+                    <div class="top">
+                        <h2><strong>Our</strong> Team</h2> 
+                        <button onclick="right()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="galery">
+                        <div>
+                            <img src="image/team/1.jpg">
+                        </div>
+                        <div>
+                            <img src="image/team/2.jpg">
+                        </div>
+                        <div>
+                            <img src="image/team/3.jpg">
+                        </div>
+                    </div>
                 </div>
-                <div class="galery">
-                    <div>
-                        <img src="image/team/1.jpg">
-                    </div>
-                    <div>
-                        <img src="image/team/2.jpg">
-                    </div>
-                    <div>
-                        <img src="image/team/3.jpg">
-                    </div>
-                </div>
-            </div>
         </section>
         <section id="client">
-            <div class="wrapper">
-                <div class="about">
-                    <h2><strong>Clients</strong> say about us</h2>
-                    <i class="fa fa-circle-thin" aria-hidden="true"></i>
-                    <i class="fa fa-circle-thin" aria-hidden="true"></i>
-                    <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                <div class="wrapper">
+                    <div class="about">
+                        <h2><strong>Clients</strong> say about us</h2>
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <div class="content">
+                            <p>“There is nothing scary in the darkness, if you encounter it face-to-face. The inevitable price we pay for our happiness is eternal fear to lose it. When you start thinking a lot about your past, it becomes your present and you can't see your future without it.”</p>
+                        </div>
+                        <div class="author">
+                            <p>— Anna Balashova, <strong>Philosopher</strong></p>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div>
+                            <img src="image/client/1.jpg">
+                            <h1>Inteligent Transitions In UX Design</h1>
+                            <ul>
+                                <li><a href="#">Anna</a></li>
+                                <li><a href="#">Photography</a></li>
+                                <li><a href="#">10 Comments</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="image/client/2.jpg">
+                            <h1>Recent trends in storytelling</h1>
+                            <ul>
+                                <li><a href="#">Anna</a></li>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">No comment</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="image/client/3.jpg">
+                            <h1>Recent trends in storytelling</h1>
+                            <ul>
+                                <li><a href="#">Anna</a></li>
+                                <li><a href="#">Creative</a></li>
+                                <li><a href="#">3 Comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="text">
-                    <div class="content">
-                        <p>“There is nothing scary in the darkness, if you encounter it face-to-face. The inevitable price we pay for our happiness is eternal fear to lose it. When you start thinking a lot about your past, it becomes your present and you
-                            can't see your future without it.”</p>
-                    </div>
-                    <div class="author">
-                        <p>— Anna Balashova, <strong>Philosopher</strong></p>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <div>
-                        <img src="image/client/1.jpg">
-                        <h1>Inteligent Transitions In UX Design</h1>
-                        <ul>
-                            <li><a href="#">Anna</a></li>
-                            <li><a href="#">Photography</a></li>
-                            <li><a href="#">10 Comments</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="image/client/2.jpg">
-                        <h1>Recent trends in storytelling</h1>
-                        <ul>
-                            <li><a href="#">Anna</a></li>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">No comment</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="image/client/3.jpg">
-                        <h1>Recent trends in storytelling</h1>
-                        <ul>
-                            <li><a href="#">Anna</a></li>
-                            <li><a href="#">Creative</a></li>
-                            <li><a href="#">3 Comments</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </section>
-        <section id="footer">
+        </section>
+    </section>
+    <section id="footer">
             <div class="wrapper">
                 <div class="height-300">
                     <div class="feature width-370">
-                        <div>
+                        <div >
                             <h1><strong>Featured</strong> posts</h1>
                         </div>
                         <div class="height-230">
@@ -274,7 +276,7 @@
                             </div>
                             <div class="three height-50">
                                 <div class="small-img">
-                                    <img src="image/client/3.jpg">
+                                    <img src="image/client/3.jpg" >
                                 </div>
                                 <div class="small-text">
                                     <h5>How to pump designer</h5>
@@ -303,7 +305,7 @@
                         </div>
                     </div>
                     <div class="contact width-370">
-                        <div>
+                        <div >
                             <h1><strong>Contacts</strong> us</h1>
                         </div>
                         <div class="inp">
@@ -314,7 +316,6 @@
                     </div>
                 </div>
             </div>
-        </section>
     </section>
     <script type="text/javascript">
     var murad=true;
