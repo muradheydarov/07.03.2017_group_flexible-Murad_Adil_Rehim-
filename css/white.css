@@ -129,15 +129,23 @@
   position: relative;
   top: 35px;
 }
+.slider_text_one div{
+  display: none;
+}
 .slider_text_one h1 {
   font-size: 80px;
   margin-bottom: 15px;
   font-weight: 100;
-  transition: 1s;
+  top: 0;
+  position: relative;
+  transition:all 2s;
+  animation: down 2s  ease;
 }
 .slider_text_one span{
   font-weight: 500;
   color: #333;
+  position: relative;
+  animation: down 2s  ease;
 }
 .slider_text_one h2{
   margin-bottom: 15px;
@@ -199,7 +207,6 @@
   font-weight: 900;
   display:flex;
   align-items: center;
-  /*justify-content: center;*/
   cursor: pointer;
 }
 .slider_button_right>div:hover{
@@ -413,6 +420,10 @@
   position: relative;
   bottom: 10px;
   transition: .3s
+}
+@keyframes down {
+  0% {top: -70px;}
+  100% {top: 0;}
 }
 @media (max-width:1199px) and (min-width:992px) {
   #nav{
